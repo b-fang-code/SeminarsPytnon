@@ -57,6 +57,6 @@ def delete_phone_book():
             break
 
 
-phone_book = open_phone_book()
-show_phone_book()
-save_phone_book()
+def escape():
+    with open('Phone_book.txt', 'r', encoding='utf-8') as data:
+        data.close()
