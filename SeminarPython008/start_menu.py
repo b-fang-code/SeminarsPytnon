@@ -13,7 +13,6 @@ def print_menu():
     return data
 
 
-
 while True:
     user_choice = print_menu()
     match user_choice:

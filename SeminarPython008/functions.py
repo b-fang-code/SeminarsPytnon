@@ -39,7 +39,8 @@ def change_phone_book():
             print(phone_book[i])
             print(i)
             new_user_info = input('Введите новый номер контакта: ')
-            phone_book[i] =phone_book[i].replace(user_info, new_user_info)
+            phone_book[i] = phone_book[i].replace(user_info, new_user_info)
+
 
 def search_phone_book():
     user_info = input('Введите данные контакта, которые Вы хотите найти: ')
@@ -60,3 +61,6 @@ def delete_phone_book():
 def escape():
     with open('Phone_book.txt', 'r', encoding='utf-8') as data:
         data.close()
+
+
+open_phone_book()
