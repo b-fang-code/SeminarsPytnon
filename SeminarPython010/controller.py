@@ -11,7 +11,7 @@ def start():
             case 1:
                 pb.open_file()
             case 2:
-                pass
+                pb.save_contact()
             case 3:
                 book = pb.get()
                 view.show_contact(book)

@@ -16,8 +16,14 @@ class PhoneBook:
             self.phone_book.append(pb)
         print('\nТелефонная книга успешно загружена\n')
 
-    def save_file(self):
-        pass
+    def save_contact(self):
+
+        data = []
+        for contact in self.phone_book:
+            data.append(';'.join(contact.values()))
+        data = '\n'.join(data)
+        with open(self.path, 'w', encoding='UTF-8') as file:
+            file.write(data)
 
     def get(self):
         return self.phone_book
